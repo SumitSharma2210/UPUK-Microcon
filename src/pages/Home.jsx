@@ -44,23 +44,36 @@ const Home = () => {
   return (
     <div className="bg-gray-50 text-gray-800">
       {/* Header */}
-      <section className="bg-white border-b py-4 px-6">
-        <div className="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-4">
-          <div className="flex-1 min-w-[80px] flex justify-start">
-            <img src={sgpgiLogo} alt="SGPGI Logo" className="w-60 h-auto" />
+      <section className="w-full bg-gradient-to-r from-blue-100 to-white py-10 px-4 shadow-md">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          {/* Left Logo */}
+          <div className="flex justify-center md:justify-start w-full md:w-auto">
+            <img
+              src={sgpgiLogo}
+              alt="SGPGI Logo"
+              className="w-48 sm:w-60 h-auto object-contain"
+            />
           </div>
-          <div className="flex-2 min-w-[200px] text-center px-4">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-800">
+
+          {/* Title + Subtitle */}
+          <div className="text-center w-full md:w-auto px-4">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-blue-800 leading-tight">
               UPUK MICROCON 2026
             </h1>
-            <p className="text-base md:text-lg lg:text-xl text-gray-900 mt-2 leading-snug">
-              21st Annual Conference of UP-UK Chapter of Indian Association of
+            <p className="text-lg sm:text-xl lg:text-2xl text-gray-800 mt-2">
+              21st Annual Conference of UP-UK Chapter of Indian Association of{" "}
               <br />
               Medical Microbiologists
             </p>
           </div>
-          <div className="flex-1 min-w-[80px] flex justify-end">
-            <img src={iammLogo} alt="IAMM Logo" className="w-36 h-auto" />
+
+          {/* Right Logo */}
+          <div className="flex justify-center md:justify-end w-full md:w-auto">
+            <img
+              src={iammLogo}
+              alt="IAMM Logo"
+              className="w-28 sm:w-36 h-auto object-contain"
+            />
           </div>
         </div>
       </section>
@@ -138,7 +151,11 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20 px-6 w-full">
+      <section
+        className="py-20 px-6 w-full"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Left: Text */}
           <div>
@@ -203,7 +220,11 @@ const Home = () => {
       </section>
 
       {/* Welcome section */}
-      <section className="py-20 px-10 w-full">
+      <section
+        className="py-20 px-10 w-full"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Left Text Block */}
           <div>
@@ -235,7 +256,11 @@ const Home = () => {
       </section>
 
       {/* Conference Hall Section */}
-      <section className="py-20 px-10 w-full">
+      <section
+        className="py-20 px-10 w-full"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Left Text Block */}
           <div data-aos="fade-right">
@@ -300,7 +325,11 @@ const Home = () => {
       </section>
 
       {/* Places to Visit - Slideshow */}
-      <section className="bg-gray-100 py-10">
+      <section
+        className="bg-gray-100 py-10"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="w-full">
           <h2 className="text-2xl font-semibold text-center text-blue-700 mb-6">
             Photo Gallery
@@ -314,7 +343,13 @@ const Home = () => {
             navigation={true}
             className="shadow-md"
           >
-            {["lucknow1.jpg", "lucknow2.jpg", "lucknow3.jpg"].map((img, i) => (
+            {[
+              "lucknow1.jpg",
+              "lucknow3.jpg",
+              "lucknow4.jpg",
+              "lucknow5.jpg",
+              "lucknow6.jpg",
+            ].map((img, i) => (
               <SwiperSlide key={i}>
                 <img
                   src={`/images/${img}`}
@@ -328,7 +363,11 @@ const Home = () => {
       </section>
 
       {/* Registration fees */}
-      <section className="py-20 px-6 w-full bg-white">
+      <section
+        className="py-20 px-6 w-full bg-white"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">
             Microcon 2026 Registration Fees
@@ -410,7 +449,11 @@ const Home = () => {
       </section>
 
       {/* Membership CTA */}
-      <section className="py-20 px-6 bg-white w-full">
+      <section
+        className="py-20 px-6 bg-white w-full"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Left Image */}
           <div>

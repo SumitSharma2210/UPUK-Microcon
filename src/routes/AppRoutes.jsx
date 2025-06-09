@@ -10,6 +10,7 @@ import Workshop from "../pages/Workshop";
 import Program from "../pages/Program";
 import Faculty from "../pages/Faculty";
 import Membership from "../pages/Membership";
+import VideoTest from "../pages/VideoTest";
 
 const AppRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const AppRoutes = () => {
       <Route path="/program" element={<Program />} />
       <Route path="/faculty" element={<Faculty />} />
       <Route path="/membership" element={<Membership />} />
+      <Route path="/test-video" element={<VideoTest />} />
     </Routes>
   );
 };
